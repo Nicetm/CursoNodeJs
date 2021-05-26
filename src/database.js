@@ -18,11 +18,9 @@ const mysqlConnection = mysql.createConnection({
 
 mysqlConnection.connect(function(err) {
     if (err) {
-        console.log(err);
-        return;
-    } else {
-        console.log('BD conectada');
-    }
+        return console.log('Error ' + err.message);
+    } 
+    console.log('Connected to the MySQL server.');
 });
 
 module.exports = mysqlConnection;
