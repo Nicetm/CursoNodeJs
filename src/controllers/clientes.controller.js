@@ -9,7 +9,7 @@ exports.obtenerDatosCliente = async (req, res) => {
             if (result == 0) {
                 res.json({message: 'No se han encontrado datos del cliente', status: result.statusCode, exito: false})
             } else {
-                res.json(result);     
+                res.json(result[0]);     
             };
         } else {
             console.log(err);

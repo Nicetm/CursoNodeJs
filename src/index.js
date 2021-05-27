@@ -21,6 +21,7 @@ app.use(express.json());
 // Rutas
 app.use('/api/auth/login', require('./routes/auth'));
 app.use('/api/cliente', require('./routes/clientes'));
+app.use('/api/users', require('./routes/users'));
 app.use('/api/banco', require('./routes/bancos'));
 app.use('/api/tipocuenta', require('./routes/tipocuentas'));
 app.use('/api/destinatario', require('./routes/destinatarios'));
