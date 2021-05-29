@@ -19,12 +19,6 @@
     "mysql": "^2.18.1",
     "node-fetch": "^2.6.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick && npm run lint",
-      "pre-push": ""
-    }
-  },
   "devDependencies": {
     "husky": "^6.0.0",
     "lint": "^0.7.0",
